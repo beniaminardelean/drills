@@ -45,5 +45,43 @@ public class Algorithms {
 		}
 		return f[n];
 	}
+	
+	int num = 1347;
+	boolean isPrime= true;{
+	
+	for(int i = 2; i<Math.sqrt(num);i++) {
+		if(num % i ==0) {
+			isPrime=false;
+			break;
+		}
+		
+		}
+	
+	if(isPrime) {
+		System.out.println(num + " : is prime");
+	}
+	else {
+		System.out.println("is not prime");
+	}
+		
+}
+	int n = 234;
+	int temp= n;
+	int r, sum= 0;{
+	
+	while(n>0) {
+		r = n%10;
+		n = n/10;
+		sum = sum + r*r*r;
+	}
+	if(temp==sum) {
+		System.out.println("is an armstrong number");
+	}
+	else {
+		System.out.println("is not an armstrong number");
+	}
+}
+	
+
 
 }
