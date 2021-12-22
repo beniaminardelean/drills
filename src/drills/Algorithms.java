@@ -81,7 +81,34 @@ public class Algorithms {
 		System.out.println("is not an armstrong number");
 	}
 }
+	{
+	System.out.println(factorial(7));
+	System.out.println(factIterative(10));
+}
+			public static int factorial (int n) {
+				if(n==1) {
+					return 1;
+				}else {
+					return n * factorial(n-1);
+				}
+			}
+			
+			  static int factIterative(int number) {
+			        int factorial = 1;
+			        for (int iNumber = 1; iNumber <= number; iNumber++) {
+			            factorial = factorial * iNumber;
+			        }
+			        return factorial;
 	
 
+			  }
+			  {
+				System.out.println(gcd(10,5));
 
+				}
+				static int gcd(int a, int b)
+				{
+				  if(a == 0 || b == 0) return a+b; // base case
+				  return gcd(b,a%b);
+				}
 }
