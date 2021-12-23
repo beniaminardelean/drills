@@ -1,5 +1,7 @@
 package drills;
 
+import java.util.Scanner;
+
 public class Algorithms {
 
 	public int bigDiff(int[] nums) {
@@ -110,5 +112,37 @@ public class Algorithms {
 				{
 				  if(a == 0 || b == 0) return a+b; // base case
 				  return gcd(b,a%b);
+				}
+				int year = 3600;{
+				
+				if(year % 400 ==0) {
+					System.out.println("leap year");
+				}
+				else if(year % 4 ==0 && year % 100 !=0) {
+					System.out.println("leap year");
+				}
+				
+				else {
+					System.out.println("not a leap year");
+				}
+				}
+				{
+				Scanner sc = new Scanner(System.in);
+				  System.out.println("Enter a number :");
+				  
+				      int num1 = sc.nextInt();
+				      int orgNum= num1;
+				      int rev = 0;
+				      
+				      while(num1!= 0) {
+				    	  rev = rev*10 + num1%10;
+				    	  num1 = num1/10;
+				      }
+				      if(orgNum == rev) {
+				    	  System.out.println(orgNum + " is a Polindorme");
+				      }
+				      else {
+				    	  System.out.println(orgNum + " is not a Polinmdrome");
+				      }
 				}
 }
