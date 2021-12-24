@@ -1,5 +1,6 @@
 package drills;
 
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 public class Algorithms {
@@ -145,4 +146,25 @@ public class Algorithms {
 				    	  System.out.println(orgNum + " is not a Polinmdrome");
 				      }
 				}
+
+				  int a[] = {5,2,6,8,6,7,5,2,8};
+			      
+				  {
+			        removeDuplicates(a);
+			    }
+			
+				  
+
+				  
+				    
+				    public static void removeDuplicates(int[] a)
+				    {
+				        LinkedHashSet<Integer> set
+				            = new LinkedHashSet<Integer>();
+				  
+				        
+				        for (int i = 0; i < a.length; i++)
+				            set.add(a[i]);
+				        System.out.print(set);
+				    }
 }
