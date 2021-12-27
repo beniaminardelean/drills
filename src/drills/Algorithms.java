@@ -177,4 +177,21 @@ public class Algorithms {
 					}  
 					System.out.println("The reverse of the given number is: " + reverse);  
 }
+				    {
+				    Scanner reader = new Scanner(System.in);
+					System.out.println("Enter a number:");
+					  double number = reader.nextDouble();
+					  
+					  double result;
+					  double squareRoot = number/2;
+					  do {
+						    result = squareRoot;
+						    squareRoot = (result + (number/result)) /2;
+						    
+						  
+					  }
+					  while((result-squareRoot)!=0) ;
+						  System.out.println("result:" + squareRoot);
+					  
+}
 }
